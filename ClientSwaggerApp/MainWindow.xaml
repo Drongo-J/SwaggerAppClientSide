@@ -1,0 +1,24 @@
+﻿<Window x:Class="ClientSwaggerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientSwaggerApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" >
+            
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
+                <Button Click="Button_Click" FontSize="30" FontFamily="Comic Sans MS" Background="White">Start Swagger</Button>
+                <TextBox Name="requestTxtb" FontSize="24" ></TextBox>
+                <Button Click="Button_Click_1" FontSize="30" FontFamily="Comic Sans MS" Background="White">Send Request</Button>
+        </StackPanel>
+            <StackPanel Width="580">
+            <TextBlock TextWrapping="Wrap"  Background="LightBlue" Text="Response Text" FontSize="25" Name="ResponseTxtb" ></TextBlock>
+                
+            </StackPanel>
+        
+        </StackPanel>
+    </Grid>
+</Window>
