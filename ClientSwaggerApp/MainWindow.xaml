@@ -5,18 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientSwaggerApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="850">
     <Grid>
-        <StackPanel Orientation="Horizontal" >
+        <StackPanel Orientation="Vertical" >
             
-        <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
+        <StackPanel Height="300" HorizontalAlignment="Left" Orientation="Horizontal">
+                <StackPanel Name="paramsStackPanel" Orientation="Vertical">
+                    
                 <Button Click="Button_Click" FontSize="30" FontFamily="Comic Sans MS" Background="White">Start Swagger</Button>
                 <TextBox Name="requestTxtb" FontSize="24" ></TextBox>
                 <Button Click="Button_Click_1" FontSize="30" FontFamily="Comic Sans MS" Background="White">Send Request</Button>
+                </StackPanel>
+                <ScrollViewer VerticalScrollBarVisibility="Visible">
+                    
+                <StackPanel Name="CommandsStackPanel" Width="580" >
+                    
+                </StackPanel>
+                </ScrollViewer>
         </StackPanel>
-            <StackPanel Width="580">
-            <TextBlock TextWrapping="Wrap"  Background="LightBlue" Text="Response Text" FontSize="25" Name="ResponseTxtb" ></TextBlock>
-                
+            <StackPanel >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                    <TextBox 
+                        TextWrapping="Wrap" Height="300"
+                               Background="LightBlue" Text="Response 
+                               Text" FontSize="20" Name="ResponseTxtb" >
+                        
+                    </TextBox>
+                </ScrollViewer>
             </StackPanel>
         
         </StackPanel>
